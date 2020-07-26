@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Projeto Blog`,
-    description: `Projeto blog, utilizando gatsby`,
+    title: `Blog`,
+    position: `Desenvolvedora Front-end`,
+    description: `Escrevo sobre os apredizados no mundo Front-end`,
     author: `Berenice Queiroz`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
