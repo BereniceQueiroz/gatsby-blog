@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Blog`,
+    title: `Berenice Queiroz`,
     position: `Desenvolvedora Front-end`,
-    description: `Escrevo sobre os apredizados no mundo Front-end`,
-    author: `Berenice Queiroz`,
+    description: `Um blog sobre os apredizados no mundo do desenvolvimento Front-end`,
+    author: `@myblog`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,

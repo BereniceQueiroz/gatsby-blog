@@ -17,8 +17,8 @@ export const ProfileLink = styled(Link)`
 `
 
 export const ProfileAuthor = styled.h1`
-  font-size: 1.6rem;
-  margin: 0.5rem auto 1.5rem;
+  font-size: 1.5rem;
+  margin: 0.5rem auto 2rem;
 `
 
 export const ProfilePosition = styled.small`
@@ -28,7 +28,7 @@ export const ProfilePosition = styled.small`
 `
 
 export const ProfileDescription = styled.p`
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
   line-height: 1.4;
 `
