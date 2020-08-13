@@ -1,7 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import { Link } from 'gatsby';
-import * as S from './pagination.styles';
+import * as S from './pagination.styled';
 
 const Pagination = ({ isFirst, isLast, currentPage, numPages, prevPage, nextPage }) => (
   <S.PaginationWrapper>

@@ -5,7 +5,7 @@ import { Grid } from '@styled-icons/boxicons-solid/Grid';
 import { Lightbulb as Light } from '@styled-icons/fa-regular/Lightbulb';
 import { UpArrowAlt as Arrow } from '@styled-icons/boxicons-regular/UpArrowAlt'
  
-import * as S from './menubar.styles'
+import * as S from './menubar.styled'
 
 const MenuBar = () => (
   <S.MenuBarWrapper>

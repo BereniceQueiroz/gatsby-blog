@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql} from "gatsby";
 import Avatar from "../Avatar"
-import * as S from "./profile.styles"
+import * as S from "./profile.styled"
 
 export default function Profile() {
   const {

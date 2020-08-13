@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types"
-import * as S from './postItem.styles';
+import * as S from './postItem.styled';
 
 const PostItem = ({ slug, background, category, date, timeToRead, title, description }) => (
   <S.PostItemLink to={slug}>

@@ -29,7 +29,7 @@ exports.createPages = ({ graphql, actions }) => {
   //O graphql trará a query para busca dos slugs e a partir do slug criar a página
   return graphql(`
     {
-      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+      allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
         edges {
           node {
             fields {
@@ -44,18 +44,36 @@ exports.createPages = ({ graphql, actions }) => {
             }
             timeToRead
           }
+          next {
+            frontmatter {
+              title
+            }
+            fields {
+              slug
+            }
+          }
+          previous {
+            frontmatter {
+              title
+            }
+            fields {
+              slug
+            }
+          }
         }
       }
     }
   `).then(result => { //assincrono assim que terminar de buscar os nodes fará uma outra açao
     const posts = result.data.allMarkdownRemark.edges
 
-    posts.forEach(({ node }) => { // passará por cada node e fará a criaçao da page 
+    posts.forEach(({ node, next, previous }) => { // passará por cada node e fará a criaçao da page 
       createPage({
         path: node.fields.slug, // caminho, nome do node
         component: path.resolve("./src/templates/blog-post.js"), //template do post fazer o import do path ele pega o caminho correto da pasta
-        context: { // permite passar qq dado para o component, por exemplo, timetoRead, slug
-          slug: node.fields.slug
+        context: { // permite passar qq dado para o component, por exemplo, timetoRead, slug == pageContext
+          slug: node.fields.slug,
+          previousPost: previous,
+          nextPost: next,
         }
       })
     })

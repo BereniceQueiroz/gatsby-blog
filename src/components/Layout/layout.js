@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Sidebar from "../Sidebar";
 import MenuBar from "../MenuBar";
 import GlobalStyles from '../../styles/global'
-import * as S from "./layout.styles";
+import * as S from "./layout.styled";
 
 export default function Layout({ children }) {
   return (
