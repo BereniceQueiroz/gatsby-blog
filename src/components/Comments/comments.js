@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactDisqusComments from "react-disqus-comments"
-
 import * as S from './comments.styled';
 
 const Comments = ({ url, title }) => {

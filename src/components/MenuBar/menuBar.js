@@ -27,7 +27,7 @@ const MenuBar = () => (
     </S.MenuBarGroup>
 
     <S.MenuBarGroup>
-      <S.MenuBarItem title='Mudar o terma'>
+      <S.MenuBarItem title='Mudar o tema'>
         <Light />
       </S.MenuBarItem>
       <S.MenuBarItem title='Mudar visualização'>
