@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Home } from '@styled-icons/boxicons-solid/Home';
 import { Search } from '@styled-icons/boxicons-regular/Search';
 import { Grid } from '@styled-icons/boxicons-solid/Grid';
+import getThemeColor from '../../utils/getThemeColor';
 import { Lightbulb as Light } from '@styled-icons/fa-regular/Lightbulb';
 import { UpArrowAlt as Arrow } from '@styled-icons/boxicons-regular/UpArrowAlt';
 import { List } from "@styled-icons/bootstrap/List";
-
- 
 import * as S from './menubar.styled'
 
 const MenuBar = () => {
@@ -28,13 +27,13 @@ const MenuBar = () => {
 
       <S.MenuBarGroup>
 
-        <S.MenuBarLink to='/' title='Voltar para Home'>
+        <S.MenuBarLink to='/' title='Voltar para Home' cover direction="left" bg={getThemeColor()} duration={0.6}>
           <S.MenuBarItem>
             <Home />
           </S.MenuBarItem>
         </S.MenuBarLink>
 
-        <S.MenuBarLink to='/search/' title='Pesquisar'>
+        <S.MenuBarLink to='/search/' title='Pesquisar' cover direction="left" bg={getThemeColor()} duration={0.6}>
           <S.MenuBarItem>
             <Search />
           </S.MenuBarItem>
@@ -55,6 +54,7 @@ const MenuBar = () => {
           onClick={() => {
             window.__setPreferredDisplay(isListMode ? "grid" : "list")
           }}
+          className="display"
         >
           {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>
