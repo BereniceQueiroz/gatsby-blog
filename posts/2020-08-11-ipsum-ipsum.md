@@ -4,6 +4,7 @@ title: Ipsum ipsun
 description:  Loren loren ipsun  Loren loren ipsun Loren loren ipsun
 category: REACT
 background: MEDIUMSLATEBLUE
+image: static/assets/img/desert.jpg
 --- 
 
 <!-- //Info do post ao clicar no card estruturado em md -->

@@ -9,7 +9,6 @@ import * as S from '../components/ListWrapper/styled';
 
 const BlogList = props => {
   const postList = props.data.allMarkdownRemark.edges
-  
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
@@ -19,7 +18,9 @@ const BlogList = props => {
   
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO 
+        title="Home"
+      />
       <S.ListWrapper>
       {postList.map(
         ({
@@ -71,6 +72,7 @@ export const query = graphql`
             date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
             description
             title
+            image
           }
           timeToRead
         }
