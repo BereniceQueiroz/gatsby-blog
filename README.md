@@ -1,5 +1,5 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<a href = "https://blog-berenicequeiroz.netlify.app/"</a>
+<a href = "https://blog-berenicequeiroz.netlify.app/">
 <p align = "center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
