@@ -33,7 +33,7 @@ const queries = [
   { 
     query: postQuery,//nome da query acima
     transformer: ({ data }) => flatten(data.posts.edges), // dado que será enviado para o Algolia
-    indexName: `dev_POSTS`, //nome dado ao caderno criado no algolia
+    indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME, //nome dado ao caderno criado no algolia
     settings: { 
       attributesToSnippet: [ `excerpt:20`] //busca de 20 em 20
     }, 
