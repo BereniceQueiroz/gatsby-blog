@@ -7,7 +7,7 @@ module.exports = {
     position: `Desenvolvedora Front-end`,
     description: `Um blog sobre os apredizados no mundo do desenvolvimento Front-end`,
     author: `@myblog`,
-    siteUrl: `https://berenicequeiroz.com.br` //url final que sobe pelo netlify
+    siteUrl: `https://blog-berenicequeiroz.netlify.app/` //url final que sobe pelo netlify
   },
   plugins: [
     `gatsby-plugin-transition-link`,
